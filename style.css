@@ -1,4 +1,64 @@
+/*GENERAL*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat_alternatesbold';
+    src: url('../fonts/montserratalternates-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserratalternates-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
+
 h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+span {
+	font-family: 'Modak', cursive;	
+}
+
+h1, span {
 	color: #4ab3a9;
+	font-size: 72px;
+}
+
+p {
+	font-family: Helvetiva, Arial, sans-serif;
+
+}
+
+div {
+	font-family: 'Dancing Script', cursive;
+	font-size: 32px;
+}
+
+h2 {
+	font-family: 'montserratregular';
+	font-size: 48px;
+	font-weight: normal;
+}
+
+.dodaj p, h3{
+	font-family: 'montserrat_alternatesbold';
+	font-size: 48px;
+
 }
 
