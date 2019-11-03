@@ -25,3 +25,20 @@ arr.forEach(function(item){
 	document.querySelector('.dodaj').appendChild(dodajga);
 
 });
+
+// Input fields - onClick
+
+var podnaslov = document.querySelector('.input-title');
+
+function onClick(e) {
+	
+	podnaslov.addEventListener('click', createInput);
+}
+
+function createInput() {
+	var unos = document.createElement('input');
+	unos.setAttribute('type', 'text');
+	document.querySelector('.input-field').appendChild(unos);
+}
+
+onClick(podnaslov);
