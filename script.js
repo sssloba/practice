@@ -33,6 +33,10 @@ var podnaslov = document.querySelector('.input-title');
 function onClick(e) {
 	
 	podnaslov.addEventListener('click', createInput);
+
+	 
+	document.addEventListener('keyup', enter);
+	
 }
 
 function createInput() {
@@ -41,4 +45,30 @@ function createInput() {
 	document.querySelector('.input-field').appendChild(unos);
 }
 
+function enter(e) {
+	var ev = e.keyCode;
+	console.log(ev);
+		if (ev === 13) {
+			createInput();
+		}
+}
+
 onClick(podnaslov);
+
+//FLEX LIST @ FORM
+
+document.querySelector(".green").textContent = "da l' ce da radi";
+
+var a = document.createElement('div');
+
+a.textContent = "Hoce li dodati ovaj tekst";
+
+document.querySelector('form').appendChild(a);
+
+var arr = ["image01", "image02", "image03", "image04"];
+
+var dodajimg = document.querySelector('.testimg');
+for(var i = 0; i < arr.length; i++) {
+	dodajimg.innerHTML += "<img src='img/" + arr[i] + ".jpg' alt='slika'>";
+	document.querySelectorAll(".testimg").apppendChild = dodajimg;
+}

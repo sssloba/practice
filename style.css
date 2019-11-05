@@ -34,7 +34,7 @@ span {
 	font-family: 'Modak', cursive;	
 }
 
-h1, span {
+h1, p span {
 	color: #4ab3a9;
 	font-size: 72px;
 }
@@ -46,7 +46,7 @@ p {
 
 div {
 	font-family: 'Dancing Script', cursive;
-	font-size: 32px;
+	font-size: 15px;
 }
 
 h2 {
@@ -85,13 +85,13 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 24em;
+	width: 50em;
 	margin: 10px auto;
 	background: #aaa;
 	border-radius: 15px;
 }
 
-input {
+.input-field input {
 	width: 47%;
 	height: 50px;
 	font-size: 24px;
@@ -101,5 +101,145 @@ input {
 	margin: 10px;
 	padding: 15px;
 	background-color: #eee;
+}
+
+/* FLEX LIST @ FORM */
+
+.lista, form div {
+	margin: 0;
+	padding: 0;
+	background-color: lightsteelblue;
+}
+
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+	font-size: 24px;
+}
+
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 36px;
+	margin-left: -36px;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+	padding: 20px;
+}
+
+li {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: solid 3px black;
+}
+
+li span {
+	font-size: 32px;
+}
+
+.white {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.a {
+	order: 1;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 100px 100px 100px;
+	border-color: transparent transparent #007bff transparent;
+}
+
+.yellow {
+	background-color: yellow;
+}
+ 
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 400px;
+	margin: 0 auto;
+	border: solid 3px black;
+}
+
+.forma {
+	display: flex;
+	justify-content: space-around;
+}
+
+label {
+	width: 60px;
+}
+
+.forma input, label {
+	margin: 10px;
+	padding: 5px;
+}
+
+.forma input, .subm {
+	width: 230px;
+	justify-content: right;
+}
+
+.subm {
+	height: 30px;
+	margin: 10px 75px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.subm:hover {
+	background-color: orange;
+}
+
+.testimg {
+	display: flex;
+	justify-content: space-around;
+}
+
+.testimg img {
+	width: 50px;
+	margin: 5px;
 }
 
