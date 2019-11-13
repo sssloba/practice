@@ -72,3 +72,21 @@ for(var i = 0; i < arr.length; i++) {
 	dodajimg.innerHTML += "<img src='img/" + arr[i] + ".jpg' alt='slika'>";
 	document.querySelectorAll(".testimg").apppendChild = dodajimg;
 }
+
+// Table with sticky header
+
+for (var j = 1; j < 21; j++) {
+	
+	var tableRows = document.querySelector("tbody");
+	var tableRow = document.createElement("tr");
+	var cells = tableRow.classList.add("cells");
+	tableRows.prepend(tableRow);
+
+	for (var i = 1; i < 6; i++) {
+		var arr = [21 - j, "Slobodan", "male", "09.06.1978", "Serbia"]
+		var cell = document.querySelector(".cells")
+		var addCell = document.createElement("td");
+		addCell.textContent = arr[i - 1];
+		cell.appendChild(addCell);
+	}
+}

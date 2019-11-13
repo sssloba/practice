@@ -243,3 +243,43 @@ label {
 	margin: 5px;
 }
 
+/* Table with sticky header */
+
+.table-box {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	overflow-y: scroll;
+	background: #fff;
+	box-shadow: 0 10px 100px rgba(0,0,0,0.5);
+}
+
+table {
+	width: 100%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+th {
+	position: sticky;
+	top: 0;
+	background: dodgerblue;
+	color: #fff;
+}
+
+tr th:first-child {
+	width: 60px;
+	text-align: center;
+	background: midnightblue;
+}
+
+tr td:first-child {
+	background: dodgerblue;
+	color: #fff;
+	text-align: center;
+}
+
