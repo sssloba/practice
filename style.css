@@ -283,3 +283,18 @@ tr td:first-child {
 	text-align: center;
 }
 
+/* SHAPES */
+
+.shapes {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+svg {
+	border: solid 10px #ababab;
+	border-radius: 5px;
+	margin: 20px;
+}
+
